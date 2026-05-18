@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Pagina rara</title>
+
+<style>
+
+html,body{
+    margin:0;
+    padding:0;
+    overflow:auto;
+    font-family:Arial, sans-serif;
+    background:black;
+}
+
+/* ========================= */
+/* INTRO */
+/* ========================= */
+
+#intro{
+    width:100vw;
+    height:100vh;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    z-index:9999;
+}
+
+button{
+    padding:25px 70px;
+    font-size:35px;
+    border:none;
+    cursor:pointer;
+    background:#ffd500;
+    color:black;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* ========================= */
+/* PAGINA */
+/* ========================= */
+
+#main{
+    display:none;
+    width:100%;
+    min-height:350vh;
+    background:#ffd500;
+    position:relative;
+}
+
+/* ========================= */
+/* TITULO */
+/* ========================= */
+
+#contenido{
+
+    padding-top:120px;
+
+    text-align:center;
+
+    color:black;
+
+}
+
+h1{
+
+    font-size:120px;
+
+    letter-spacing:10px;
+
+    margin:0;
+
+}
+
+p{
+
+    font-size:35px;
+
+}
+
+/* ========================= */
+/* CONTENEDOR IMAGENES */
+/* ========================= */
+
+#imagenes{
+
+    width:100%;
+
+    margin-top:150px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:flex-start;
+
+    flex-wrap:wrap;
+
+    gap:50px;
+
+}
+
+/* ========================= */
+/* MARCOS */
+/* ========================= */
+
+.marco{
+
+    width:500px;
+
+    background:#ffd500;
+
+    padding:25px;
+
+    border:6px solid black;
+
+    box-shadow:
+    0px 0px 25px rgba(0,0,0,0.7);
+
+}
+
+/* ========================= */
+/* IMAGEN */
+/* ========================= */
+
+.marco img{
+
+    width:100%;
+
+    display:block;
+
+    border:4px solid black;
+
+}
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
+
+.texto{
+
+    margin-top:20px;
+
+    background:#ffd500;
+
+    color:black;
+
+    padding:25px;
+
+    font-size:24px;
+
+    line-height:1.9;
+
+    min-height:300px;
+
+    font-family:"Courier New", monospace;
+
+    border:4px solid black;
+
+    text-align:left;
+
+    text-shadow:
+    0 0 3px rgba(0,0,0,0.4);
+
+    box-shadow:
+    0 0 15px rgba(0,0,0,0.4);
+
+}
+
+/* ========================= */
+/* BOTON ABAJO */
+/* ========================= */
+
+#zonaBoton{
+
+    width:100%;
+
+    text-align:center;
+
+    margin-top:250px;
+
+    padding-bottom:250px;
+
+}
+
+#botonGif{
+
+    background:black;
+
+    color:#ffd500;
+
+    border:5px solid #ffd500;
+
+    font-size:40px;
+
+    padding:30px 70px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+/* ========================= */
+/* PAGINA GIF */
+/* ========================= */
+
+#gifPage{
+
+    display:none;
+
+    width:100%;
+
+    height:100vh;
+
+    background:url("gif1.gif");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    position:relative;
+
+}
+
+#gifOverlay{
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.35);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+}
+
+#gifOverlay h1{
+
+    font-size:120px;
+
+    margin:0;
+
+}
+
+#gifOverlay p{
+
+    font-size:40px;
+
+}
+
+/* ========================= */
+/* REGRESAR */
+/* ========================= */
+
+.volver{
+
+    position:absolute;
+
+    top:40px;
+
+    left:40px;
+
+    background:black;
+
+    color:#ffd500;
+
+    border:4px solid #ffd500;
+
+    padding:15px 35px;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    z-index:9999;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+
+<div id="intro">
+
+<button onclick="entrar()">
+ENTER
+</button>
+
+</div>
+
+<!-- PAGINA -->
+
+<div id="main">
+
+<div id="contenido">
+
+<h1>Holap</h1>
+
+<p>Los quiero</p>
+
+</div>
+
+<!-- IMAGENES -->
+
+<div id="imagenes">
+
+<!-- IZQUIERDA -->
+
+<div class="marco">
+
+<img src="imagen1.jpg">
+
+<div class="texto">
+
+> Hola <br>
+> <br>
+> <br>
+> <br>
+> <br>
+> <br>
+> <br>
+
+</div>
+
+</div>
+
+<!-- DERECHA -->
+
+<div class="marco">
+
+<img src="imagen2.jpg">
+
+<div class="texto">
+
+> Ya va a hacer mi pumple<br>
+> Ya va a hacer mi pumple<br>
+> Ya va a hacer mi pumple<br>
+> Ya va a hacer mi pumple<br>
+> Ya va a hacer mi pumple<br>
+> Ya va a hacer mi pumple<br>
+> Ya va a hacer mi pumple<br>
+> Ya va a hacer mi pumple
+
+</div>
+
+</div>
+
+</div>
+
+<!-- BOTON -->
+
+<div id="zonaBoton">
+
+<button id="botonGif" onclick="irGif()">
+Mota
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGINA GIF -->
+
+<div id="gifPage">
+
+<div id="gifOverlay">
+
+<!-- REGRESAR -->
+
+<button class="volver" onclick="volverMain()">
+REGRESAR
+</button>
+
+<h1>😹</h1>
+
+<p></p>
+
+</div>
+
+</div>
+
+<!-- MUSICA -->
+
+<audio id="music" loop>
+<source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+function entrar(){
+
+    document.getElementById("intro").style.display = "none";
+
+    document.getElementById("main").style.display = "block";
+
+    document.getElementById("music").play();
+
+}
+
+function irGif(){
+
+    document.getElementById("main").style.display = "none";
+
+    document.getElementById("gifPage").style.display = "block";
+
+    window.scrollTo(0,0);
+
+}
+
+function volverMain(){
+
+    document.getElementById("gifPage").style.display = "none";
+
+    document.getElementById("main").style.display = "block";
+
+    window.scrollTo(0,0);
+
+}
+
+</script>
+
+</body>
+</html>
